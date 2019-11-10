@@ -27,7 +27,7 @@ cacheSolve <- function(x, ...) {
     message("getting cashed data")
     return(m)
   }
-  data <- x$solve()
+  data <- x$get()
   m <- solve(data, ...)
   x$setsolve(m)
   m
